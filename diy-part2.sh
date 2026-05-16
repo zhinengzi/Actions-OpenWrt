@@ -22,7 +22,7 @@
 # 自动寻找 OpenWrt 当前使用的内核补丁目录
 PATCH_DIR=$(ls -d target/linux/x86/patches-* | tail -n 1)
 
-# 下载大佬的 BCM57810A 2.5G 终极驱动补丁
-curl -L https://raw.githubusercontent.com/JAMESMTL/snippets/master/bnx2x/patches/bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch -o $PATCH_DIR/999-bnx2x-2.5g.patch
+# # 直接从 Arch Linux 官方 AUR 仓库拉取适配了 6.x 新内核的 2.5G 补丁！
+curl -L "https://aur.archlinux.org/cgit/aur.git/plain/0001-bnx2x-Add-support-for-2.5-Gbps-HSGMII-mode.patch?h=bnx2x-2500m-dkms" -o $PATCH_DIR/999-bnx2x-2.5g.patch
 
 echo "==== BCM57810A 2.5G 补丁已成功注入 ===="
