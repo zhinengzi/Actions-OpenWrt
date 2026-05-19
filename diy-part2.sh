@@ -24,5 +24,6 @@
 
 # 直接从 Arch Linux 官方 AUR 仓库拉取适配了 6.x 新内核的 2.5G 补丁！
 # curl -L "https://raw.githubusercontent.com/zhinengzi/linux6.x-bnx2x-2.5g-patch/refs/heads/main/linux6.x-bnx2x-2.5g.patch" -o $PATCH_DIR/999-linux6.x-bnx2x-2.5g.patch
+# curl -L "https://aur.archlinux.org/cgit/aur.git/plain/0001-bnx2x-Add-support-for-2.5-Gbps-HSGMII-mode.patch?h=bnx2x-2500m-dkms" -o $PATCH_DIR/999-bnx2x-2.5g.patch
 
 # echo "===> [SUCCESS] Linux6.x-Bnx2x-2.5G 补丁已成功注入! <==="
